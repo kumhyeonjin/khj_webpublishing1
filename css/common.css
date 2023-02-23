@@ -1,0 +1,144 @@
+@charset 'utf-8';
+
+:root {
+  --width: calc(100%-64px);
+  --mw: 1280px;
+}
+
+.mw {
+  width: var(--width);
+  max-width: var(--mw);
+  margin: auto;
+}
+
+.hd {
+  width: var(--width);
+  max-width: var(--mw);
+  margin: auto;
+  margin-top: 30px;
+}
+.hd_top {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+
+  height: 90px;
+  position: relative;
+}
+
+.logo {
+  width: 35%;
+}
+
+.hd_service {
+  position: absolute;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.gnb {
+  border: 2px solid green;
+  height: 50px;
+}
+
+.gnb > ul {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  /* padding-top: 10px; */
+  text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.gnb a {
+  color: #000000;
+}
+
+.main_menu {
+  /* border: 1px solid crimson; */
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+.main_menu > a {
+  font-weight: bold;
+}
+.gnb > ul:hover .main_menu {
+  background-color: rgb(73, 73, 73);
+}
+
+.gnb ul:hover .main_menu a {
+  color: white;
+}
+.gnb ul:hover .sub_menu {
+  opacity: 1;
+}
+
+.sub_menu {
+  opacity: 0;
+  transition: 0.5s;
+  /* display: none; */
+  padding: 1rem;
+}
+
+/* visual */
+
+.visual {
+  width: var(--width);
+  height: 300px;
+  border: 1px solid red;
+  background-image: url(../img/bg1.jpg);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+}
+.visual_con {
+  height: 280px;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.v_text {
+  padding: 3rem 0;
+}
+.v_text h1 {
+  font-size: 30px;
+}
+.v_link {
+  border: 1px solid #000000;
+  padding: 0.5rem 4rem;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.img_banner {
+  border: 1px solid blue;
+  background-color: rgba(129, 166, 180, 0.5);
+}
+.img_banner div {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.img_banner div img {
+  width: 30%;
+}
+.img_banner div:hover .img {
+  width: 35%;
+}
+
+.notice {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  display: none;
+}
